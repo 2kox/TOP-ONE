@@ -37,3 +37,29 @@ window.addEventListener("load", () => {
     loader.classList.add("hide");
   }, 1500);
 });
+const cards = document.querySelectorAll(
+  ".card, .news-card, .rule-card, .owner-card, .access-card"
+);
+
+cards.forEach(card => {
+  card.addEventListener("mousemove", e => {
+    const rect = card.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = (y - centerY) / 18;
+    const rotateY = (centerX - x) / 18;
+
+    card.style.transform =
+      `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform =
+      "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
+  });
+});

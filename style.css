@@ -687,3 +687,11 @@ html {
 .owner-card:hover span {
   color: var(--gold);
 }
+.card,
+.news-card,
+.rule-card,
+.owner-card,
+.access-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}

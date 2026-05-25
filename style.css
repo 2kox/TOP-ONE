@@ -1273,3 +1273,10 @@ body::before{
   padding-top: 25px !important;
   padding-bottom: 35px !important;
 }
+#family{
+  padding-bottom: 0 !important;
+}
+
+.footer{
+  padding-top: 15px !important;
+}

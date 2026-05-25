@@ -1121,17 +1121,7 @@ body.dark .orb{
   pointer-events: none;
 }
 
-.about-section .card::after{
-  content: "TOP ONE";
-  position: absolute;
-  right: 24px;
-  bottom: 18px;
-  font-family: 'Cinzel', serif;
-  font-size: 54px;
-  font-weight: 900;
-  letter-spacing: 5px;
-  color: rgba(0,0,0,0.035);
-}
+
 
 .about-section .card h3{
   font-size: 28px;

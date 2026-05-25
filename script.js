@@ -81,7 +81,7 @@ window.addEventListener("load", () => {
     loader.classList.add("hide");
 
     sound.volume = 0.4;
-    sound.play();
+    sound.play().catch(() => {});
 
   }, 1100);
 

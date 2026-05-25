@@ -769,3 +769,14 @@ html {
     font-size: 13px;
   }
 }
+.card-title{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.card-title i{
+  font-size: 15px;
+  color: #8d8578;
+}

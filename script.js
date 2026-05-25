@@ -77,3 +77,18 @@ window.history.scrollRestoration = "manual";
 window.onload = () => {
   window.scrollTo(0, 0);
 };
+
+window.addEventListener("load", () => {
+
+  const loader = document.querySelector(".loader");
+  const sound = document.getElementById("introSound");
+
+  setTimeout(() => {
+    loader.classList.add("hide");
+
+    sound.volume = 0.4;
+    sound.play();
+
+  }, 1800);
+
+});

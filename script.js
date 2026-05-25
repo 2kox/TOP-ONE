@@ -73,16 +73,19 @@ window.onload = () => {
 };
 
 window.addEventListener("load", () => {
-
   const loader = document.querySelector(".loader");
   const sound = document.getElementById("introSound");
 
   setTimeout(() => {
     loader.classList.add("hide");
-
-    sound.volume = 0.4;
-    sound.play().catch(() => {});
-
   }, 1100);
 
+  function startMusic() {
+    sound.volume = 0.4;
+    sound.play().catch(() => {});
+  }
+
+  window.addEventListener("scroll", startMusic, { once: true });
+  window.addEventListener("mousemove", startMusic, { once: true });
+  window.addEventListener("touchstart", startMusic, { once: true });
 });

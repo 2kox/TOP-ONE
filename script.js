@@ -72,6 +72,8 @@ themeBtn.addEventListener("click", () => {
   themeBtn.textContent = document.body.classList.contains("dark") ? "☀" : "☾";
 });
 
-window.onbeforeunload = function () {
+window.history.scrollRestoration = "manual";
+
+window.onload = () => {
   window.scrollTo(0, 0);
 };

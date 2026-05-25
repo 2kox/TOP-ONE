@@ -942,66 +942,64 @@ html {
 }
 
 
-/* =========================
-   DARK MODE FULL THEME
-========================= */
+
+
+/* DARK MODE LUXURY */
 
 body.dark{
   background:
-    radial-gradient(circle at top, rgba(180,140,40,0.12), transparent 35%),
-    linear-gradient(to bottom, #111, #070707);
-    
-  color: #f5f1e8;
+    radial-gradient(circle at top left, rgba(184,163,106,0.18), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.05), transparent 30%),
+    #080808;
+  color: #f4ead6;
 }
 
-/* Navbar */
-
 body.dark .navbar{
-  background: rgba(20,20,20,0.82);
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+  background: rgba(10,10,10,0.78);
+  border: 1px solid rgba(184,163,106,0.28);
+}
+
+body.dark .nav-links{
+  background: rgba(10,10,10,0.96);
 }
 
 body.dark .brand,
+body.dark .nav-links a,
 body.dark .menu-btn,
-body.dark .theme-btn{
-  color: #f5f1e8;
-}
-
-/* Main titles */
-
 body.dark h1,
 body.dark h2,
 body.dark h3{
-  color: #f5f1e8;
+  color: #f4ead6;
 }
 
-/* Paragraphs */
-
-body.dark p,
 body.dark .tagline,
+body.dark p,
+body.dark .section p,
 body.dark .arabic-text{
-  color: rgba(245,241,232,0.72);
+  color: rgba(244,234,214,0.68);
 }
 
-/* Logo */
+body.dark .section-badge{
+  background: rgba(184,163,106,0.12);
+  border-color: rgba(184,163,106,0.28);
+  color: #d7c27c;
+}
 
 body.dark .logo-circle{
-  background: #ece7dc;
-  box-shadow:
-    0 20px 50px rgba(255,255,255,0.06),
-    0 0 80px rgba(255,215,100,0.08);
+  background: linear-gradient(145deg, #f0e4cc, #b8a36a);
+  border-color: #f4ead6;
+  color: #080808;
 }
 
-/* Main button */
+body.dark .logo-sub{
+  color: rgba(8,8,8,0.55);
+}
 
 body.dark .main-btn{
-  background: linear-gradient(145deg,#f4eee2,#d8ccb4);
-  color: #111;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  background: linear-gradient(135deg, #d7c27c, #f4ead6);
+  color: #080808;
+  border-color: transparent;
 }
-
-/* Cards */
 
 body.dark .access-card,
 body.dark .card,
@@ -1010,90 +1008,70 @@ body.dark .owner-card,
 body.dark .member,
 body.dark .rule-box{
   background:
-    linear-gradient(
-      145deg,
-      rgba(34,34,34,0.95),
-      rgba(18,18,18,0.92)
-    );
-
-  border: 1px solid rgba(255,255,255,0.08);
-
+    linear-gradient(145deg, rgba(28,28,24,0.96), rgba(12,12,12,0.94));
+  border: 1px solid rgba(184,163,106,0.22);
   box-shadow:
-    0 18px 40px rgba(0,0,0,0.45),
-    inset 0 1px 0 rgba(255,255,255,0.04);
+    0 22px 50px rgba(0,0,0,0.55),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  color: #f4ead6;
 }
-
-/* Text inside cards */
 
 body.dark .access-card span,
-body.dark .access-card strong,
 body.dark .news-card span,
-body.dark .owner-card span,
-body.dark .member,
-body.dark .rule-box p{
-  color: #f5f1e8;
+body.dark .owner-card span{
+  color: #d7c27c;
 }
 
-/* Rule numbers */
+body.dark .access-card strong,
+body.dark .member,
+body.dark .rule-box p{
+  color: #f4ead6;
+}
+
+body.dark .access-card:hover,
+body.dark .news-card:hover,
+body.dark .owner-card:hover{
+  background: linear-gradient(145deg, #d7c27c, #f4ead6);
+  color: #080808;
+}
+
+body.dark .access-card:hover span,
+body.dark .access-card:hover strong,
+body.dark .news-card:hover span,
+body.dark .news-card:hover h3,
+body.dark .news-card:hover p,
+body.dark .owner-card:hover span{
+  color: #080808;
+}
 
 body.dark .rule-box::before{
-  color: rgba(255,255,255,0.30);
+  color: #d7c27c;
 }
 
 body.dark .rule-box::after{
-  background: rgba(255,255,255,0.14);
+  background: rgba(215,194,124,0.35);
 }
 
-/* Footer */
+body.dark .theme-btn{
+  background: rgba(184,163,106,0.16);
+  color: #f4ead6;
+  border: 1px solid rgba(184,163,106,0.28);
+}
 
 body.dark .footer{
   background: #050505;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(184,163,106,0.22);
 }
 
 body.dark .footer-brand,
 body.dark .footer p,
-body.dark .footer a{
-  color: #f5f1e8;
+body.dark .footer a,
+body.dark .footer-links i{
+  color: #f4ead6;
 }
 
-/* Navigation links */
-
-body.dark .nav-links{
-  background: rgba(15,15,15,0.96);
+body.dark .orb{
+  background: rgba(184,163,106,0.16);
 }
 
-body.dark .nav-links a{
-  color: #f5f1e8;
-}
-
-/* Glow orbs */
-
-body.dark .orb-one{
-  background: rgba(255,210,80,0.10);
-}
-
-body.dark .orb-two{
-  background: rgba(255,255,255,0.04);
-}
-
-/* Theme button */
-
-.theme-btn{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-
-  background: rgba(0,0,0,0.06);
-  color: #111;
-
-  font-size: 20px;
-}
-
-body.dark .theme-btn{
-  background: rgba(255,255,255,0.08);
-  color: #f5f1e8;
-}
 

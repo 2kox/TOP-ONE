@@ -71,3 +71,7 @@ themeBtn.addEventListener("click", () => {
 
   themeBtn.textContent = document.body.classList.contains("dark") ? "☀" : "☾";
 });
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};

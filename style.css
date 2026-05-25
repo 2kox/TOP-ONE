@@ -1274,3 +1274,19 @@ body::before{
   padding-bottom: 35px !important;
 }
 
+#family{
+  padding-top: 70px !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: auto !important;
+}
+
+#family::after{
+  display: none !important;
+}
+
+.footer{
+  margin-top: -80px !important;
+  padding-top: 0 !important;
+  padding-bottom: 25px !important;
+}

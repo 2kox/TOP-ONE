@@ -82,10 +82,18 @@ window.addEventListener("load", () => {
 
   function startMusic() {
     sound.volume = 0.4;
-    sound.play().catch(() => {});
+    sound.play().catch(error => {
+      console.log("Music blocked:", error);
+    });
+
+    window.removeEventListener("click", startMusic);
+    window.removeEventListener("touchstart", startMusic);
+    window.removeEventListener("scroll", startMusic);
+    window.removeEventListener("keydown", startMusic);
   }
 
-  window.addEventListener("scroll", startMusic, { once: true });
-  window.addEventListener("pointermove", startMusic, { once: true });
-  window.addEventListener("touchstart", startMusic, { once: true });
+  window.addEventListener("click", startMusic);
+  window.addEventListener("touchstart", startMusic);
+  window.addEventListener("scroll", startMusic);
+  window.addEventListener("keydown", startMusic);
 });

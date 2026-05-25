@@ -82,7 +82,9 @@ window.addEventListener("load", () => {
 
   function startMusic() {
     sound.volume = 0.4;
-    sound.play();
+    sound.play().catch(error => {
+      console.log(error);
+    });
   }
 
   document.body.addEventListener("click", startMusic, { once: true });

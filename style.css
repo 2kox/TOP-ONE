@@ -1080,3 +1080,21 @@ body.dark .orb{
   align-items: center;
   gap: 16px;
 }
+
+
+.nav-actions{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.theme-btn{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.06);
+  color: #111;
+  font-size: 20px;
+  cursor: pointer;
+}

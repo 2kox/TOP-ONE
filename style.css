@@ -790,7 +790,7 @@ html {
 }
 
 .owner-avatar img{
-  width: 115%;
+  width: 125%;
   height: 115%;
   object-fit: cover;
   object-position: center;

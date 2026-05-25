@@ -791,7 +791,7 @@ html {
 
 .owner-avatar img{
   width: 125%;
-  height: 115%;
+  height: 125%;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;

@@ -830,3 +830,12 @@ direction: rtl;
 text-align: right;
 line-height: 1.9;
 font-family: 'Cairo', sans-serif;
+
+.arabic-text {
+  direction: rtl;
+  text-align: right;
+  font-family: "Arial", "Tahoma", sans-serif;
+  letter-spacing: 0;
+  word-spacing: normal;
+  line-height: 2;
+}

@@ -1280,3 +1280,13 @@ body::before{
 .footer{
   padding-top: 15px !important;
 }
+#family{
+  padding-bottom: 0 !important;
+  min-height: auto !important;
+}
+
+.footer{
+  margin-top: -40px;
+  padding-top: 0 !important;
+  padding-bottom: 20px !important;
+}

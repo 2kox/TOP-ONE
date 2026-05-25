@@ -114,8 +114,8 @@ body {
 
 .logo-sub {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
-  letter-spacing: 5px;
+  font-size: 8px;
+  letter-spacing: 4px;
   color: var(--gray);
   margin-top: 5px;
 }

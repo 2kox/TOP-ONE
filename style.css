@@ -1300,20 +1300,35 @@ html, body{
   margin: 80px auto 40px;
   padding: 48px 24px;
   border-radius: 34px;
-  background: rgba(247,244,237,0.08);
-  border: 1px solid rgba(247,244,237,0.18);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  background: rgba(247,244,237,0.65);
+  border: 1px solid rgba(16,16,16,0.12);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.16);
   backdrop-filter: blur(16px);
 }
 
 .footer-brand {
-  color: var(--cream);
+  color: var(--dark);
 }
 
 .footer-links a {
-  color: var(--cream);
+  color: var(--dark);
 }
 
 .footer p {
+  color: var(--gray);
+}
+
+body.dark .footer {
+  background: rgba(247,244,237,0.08);
+  border: 1px solid rgba(247,244,237,0.18);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+body.dark .footer-brand,
+body.dark .footer-links a {
+  color: var(--cream);
+}
+
+body.dark .footer p {
   color: rgba(247,244,237,0.75);
 }

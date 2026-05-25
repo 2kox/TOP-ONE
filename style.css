@@ -1059,8 +1059,8 @@ body.dark .theme-btn{
 }
 
 body.dark .footer{
-  background: #050505;
-  border-top: 1px solid rgba(184,163,106,0.22);
+  background: transparent;
+  border-top: none;
 }
 
 body.dark .footer-brand,

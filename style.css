@@ -1232,7 +1232,7 @@ body.dark .orb{
   display: block;
   width: 120px;
   height: 1px;
-  margin: 90px auto 0;
+  margin: 45px auto 0;
   background: linear-gradient(
     to right,
     transparent,
@@ -1259,4 +1259,9 @@ body::before{
   to{
     transform: translateY(-20px);
   }
+}
+
+.section{
+  padding-top: 110px;
+  padding-bottom: 110px;
 }

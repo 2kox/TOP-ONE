@@ -940,3 +940,40 @@ html {
     right: 52px;
   }
 }
+
+.theme-btn{
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  cursor: pointer;
+  color: #111;
+}
+
+body.dark{
+  background: #111;
+  color: #f5f1e8;
+}
+
+body.dark .navbar,
+body.dark .access-card,
+body.dark .card,
+body.dark .news-card,
+body.dark .owner-card,
+body.dark .rule-box{
+  background: rgba(35,35,35,0.82);
+  color: #f5f1e8;
+  border-color: rgba(255,255,255,0.15);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark .brand,
+body.dark .rule-box p{
+  color: #f5f1e8;
+}
+
+body.dark p,
+body.dark .tagline{
+  color: rgba(245,241,232,0.7);
+}

@@ -576,66 +576,6 @@ html {
   pointer-events: none;
 }
 
-.loader-logo {
-  text-align: center;
-  font-family: 'Cinzel', serif;
-  color: var(--dark);
-}
-
-.loader-logo span {
-  display: block;
-  font-size: 82px;
-  font-weight: 900;
-  line-height: 0.8;
-}
-
-.loader-logo strong {
-  display: block;
-  letter-spacing: 6px;
-  font-size: 24px;
-}
-
-.loader-line {
-  width: 180px;
-  height: 2px;
-  background: rgba(16,16,16,0.15);
-  overflow: hidden;
-  position: relative;
-}
-
-.loader-line::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--dark);
-  animation: loadingLine 1.4s ease forwards;
-}
-
-@keyframes loadingLine {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-.loader-circle {
-  width: 170px;
-  height: 170px;
-  animation: float 3s ease-in-out infinite;
-}
-
-.loader-circle .number {
-  font-size: 64px;
-}
-
-.loader-circle .logo-text {
-  font-size: 17px;
-}
-
-.loader-circle .logo-sub {
-  font-size: 9px;
-}
 .owners-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

@@ -86,6 +86,6 @@ window.addEventListener("load", () => {
   }
 
   window.addEventListener("scroll", startMusic, { once: true });
-  window.addEventListener("mousemove", startMusic, { once: true });
+  window.addEventListener("pointermove", startMusic, { once: true });
   window.addEventListener("touchstart", startMusic, { once: true });
 });

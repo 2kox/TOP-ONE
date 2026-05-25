@@ -1098,3 +1098,53 @@ body.dark .orb{
   font-size: 20px;
   cursor: pointer;
 }
+
+.about-section .card{
+  position: relative;
+  overflow: hidden;
+  padding: 46px 36px;
+  border-radius: 34px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.72), rgba(238,230,211,0.55));
+  border: 1px solid rgba(255,255,255,0.85);
+  box-shadow:
+    0 28px 70px rgba(0,0,0,0.14),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.about-section .card::before{
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 26px;
+  border: 1px solid rgba(0,0,0,0.08);
+  pointer-events: none;
+}
+
+.about-section .card::after{
+  content: "TOP ONE";
+  position: absolute;
+  right: 24px;
+  bottom: 18px;
+  font-family: 'Cinzel', serif;
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: rgba(0,0,0,0.035);
+}
+
+.about-section .card h3{
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+
+.about-section .card p{
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+.about-section .arabic-text{
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(0,0,0,0.10);
+}

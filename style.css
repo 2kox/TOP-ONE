@@ -837,37 +837,3 @@ html {
 }
 
 
-.rule-box{
-  background: rgba(255,255,255,0.55);
-  border: 1.5px solid rgba(255,255,255,0.7);
-  border-radius: 28px;
-
-  padding: 26px 24px;
-  margin: 22px 0;
-
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
-  box-shadow:
-    0 8px 30px rgba(0,0,0,0.08),
-    inset 0 1px 1px rgba(255,255,255,0.7);
-
-  text-align: center;
-
-  transition: 0.3s ease;
-}
-
-.rule-box:hover{
-  transform: translateY(-3px);
-  box-shadow:
-    0 14px 35px rgba(0,0,0,0.12),
-    inset 0 1px 1px rgba(255,255,255,0.8);
-}
-
-.rule-box p{
-  margin: 0;
-  font-size: 25px;
-  font-weight: 700;
-  color: #111;
-  line-height: 1.8;
-}

@@ -795,3 +795,12 @@ html {
   object-fit: cover;
   border-radius: 50%;
 }
+
+.footer-links i{
+  font-size: 30px;
+  color: var(--dark);
+}
+
+.footer-links a:hover i{
+  color: var(--gold);
+}

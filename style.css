@@ -1225,3 +1225,18 @@ body.dark .orb{
   font-weight: 900;
   letter-spacing: 1px;
 }
+
+
+.section::after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  margin: 90px auto 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(184,163,106,0.65),
+    transparent
+  );
+}

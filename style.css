@@ -1265,3 +1265,11 @@ body::before{
   padding-top: 110px;
   padding-bottom: 110px;
 }
+#family{
+  padding-bottom: 30px !important;
+}
+
+.footer{
+  padding-top: 25px !important;
+  padding-bottom: 35px !important;
+}

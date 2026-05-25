@@ -1281,3 +1281,17 @@ footer.footer{
 html, body{
   margin-bottom: 0;
 }
+
+#family{
+  padding-bottom: 0 !important;
+}
+
+.footer{
+  padding-top: 15px !important;
+  padding-bottom: 0 !important;
+  min-height: 0 !important;
+}
+
+.footer p{
+  margin-bottom: 0 !important;
+}

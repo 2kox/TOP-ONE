@@ -941,105 +941,67 @@ html {
   }
 }
 
-.theme-btn{
-  border: none;
-  background: transparent;
-  font-size: 26px;
-  cursor: pointer;
-  color: #111;
-}
+
+/* =========================
+   DARK MODE FULL THEME
+========================= */
 
 body.dark{
-  background: #111;
+  background:
+    radial-gradient(circle at top, rgba(180,140,40,0.12), transparent 35%),
+    linear-gradient(to bottom, #111, #070707);
+    
   color: #f5f1e8;
 }
 
-body.dark .navbar,
-body.dark .access-card,
-body.dark .card,
-body.dark .news-card,
-body.dark .owner-card,
-body.dark .rule-box{
-  background: rgba(35,35,35,0.82);
-  color: #f5f1e8;
-  border-color: rgba(255,255,255,0.15);
-}
-
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark .brand,
-body.dark .rule-box p{
-  color: #f5f1e8;
-}
-
-body.dark p,
-body.dark .tagline{
-  color: rgba(245,241,232,0.7);
-}
-
-
-
-.nav-actions{
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.theme-btn{
-  width: 38px;
-  height: 38px;
-  border: none;
-  border-radius: 50%;
-  background: rgba(0,0,0,0.08);
-  color: #111;
-  font-size: 21px;
-  cursor: pointer;
-}
-
-body.dark{
-  background: radial-gradient(circle at top, #2b2922 0%, #111 45%, #090909 100%);
-  color: #f4eee2;
-}
+/* Navbar */
 
 body.dark .navbar{
-  background: rgba(28,28,26,0.82);
-  border: 1px solid rgba(255,255,255,0.12);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.45);
+  background: rgba(20,20,20,0.82);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
 }
 
 body.dark .brand,
 body.dark .menu-btn,
 body.dark .theme-btn{
-  color: #f4eee2;
+  color: #f5f1e8;
 }
 
-body.dark .theme-btn{
-  background: rgba(255,255,255,0.10);
-}
-
-body.dark .logo-circle{
-  background: #f4eee2;
-  color: #111;
-  box-shadow: 0 20px 45px rgba(255,255,255,0.08);
-}
+/* Main titles */
 
 body.dark h1,
 body.dark h2,
 body.dark h3{
-  color: #f4eee2;
+  color: #f5f1e8;
 }
+
+/* Paragraphs */
 
 body.dark p,
 body.dark .tagline,
-body.dark .section p{
-  color: rgba(244,238,226,0.72);
+body.dark .arabic-text{
+  color: rgba(245,241,232,0.72);
 }
 
-body.dark .main-btn{
-  background: #f4eee2;
-  color: #111;
+/* Logo */
+
+body.dark .logo-circle{
+  background: #ece7dc;
+  box-shadow:
+    0 20px 50px rgba(255,255,255,0.06),
+    0 0 80px rgba(255,215,100,0.08);
 }
+
+/* Main button */
+
+body.dark .main-btn{
+  background: linear-gradient(145deg,#f4eee2,#d8ccb4);
+  color: #111;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* Cards */
 
 body.dark .access-card,
 body.dark .card,
@@ -1047,34 +1009,91 @@ body.dark .news-card,
 body.dark .owner-card,
 body.dark .member,
 body.dark .rule-box{
-  background: linear-gradient(145deg, rgba(40,40,38,0.92), rgba(24,24,22,0.88));
-  border: 1px solid rgba(255,255,255,0.13);
-  color: #f4eee2;
-  box-shadow: 0 16px 38px rgba(0,0,0,0.45);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(34,34,34,0.95),
+      rgba(18,18,18,0.92)
+    );
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.04);
 }
+
+/* Text inside cards */
 
 body.dark .access-card span,
 body.dark .access-card strong,
 body.dark .news-card span,
 body.dark .owner-card span,
+body.dark .member,
 body.dark .rule-box p{
-  color: #f4eee2;
+  color: #f5f1e8;
 }
 
+/* Rule numbers */
+
 body.dark .rule-box::before{
-  color: rgba(244,238,226,0.45);
+  color: rgba(255,255,255,0.30);
 }
 
 body.dark .rule-box::after{
-  background: rgba(244,238,226,0.25);
+  background: rgba(255,255,255,0.14);
 }
+
+/* Footer */
 
 body.dark .footer{
-  background: #090909;
-  color: #f4eee2;
-  border-top: 1px solid rgba(255,255,255,0.10);
+  background: #050505;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
+body.dark .footer-brand,
+body.dark .footer p,
 body.dark .footer a{
-  color: #f4eee2;
+  color: #f5f1e8;
 }
+
+/* Navigation links */
+
+body.dark .nav-links{
+  background: rgba(15,15,15,0.96);
+}
+
+body.dark .nav-links a{
+  color: #f5f1e8;
+}
+
+/* Glow orbs */
+
+body.dark .orb-one{
+  background: rgba(255,210,80,0.10);
+}
+
+body.dark .orb-two{
+  background: rgba(255,255,255,0.04);
+}
+
+/* Theme button */
+
+.theme-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  background: rgba(0,0,0,0.06);
+  color: #111;
+
+  font-size: 20px;
+}
+
+body.dark .theme-btn{
+  background: rgba(255,255,255,0.08);
+  color: #f5f1e8;
+}
+

@@ -83,6 +83,6 @@ window.addEventListener("load", () => {
     sound.volume = 0.4;
     sound.play();
 
-  }, 1400);
+  }, 1100);
 
 });

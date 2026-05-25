@@ -790,9 +790,10 @@ html {
 }
 
 .owner-avatar img{
-  width: 100%;
-  height: 100%;
+  width: 115%;
+  height: 115%;
   object-fit: cover;
+  object-position: center;
   border-radius: 50%;
 }
 
@@ -825,11 +826,6 @@ html {
 .welcome-card p:last-child{
   margin-bottom: 0;
 }
-
-direction: rtl;
-text-align: right;
-line-height: 1.9;
-font-family: 'Cairo', sans-serif;
 
 .arabic-text {
   direction: rtl;

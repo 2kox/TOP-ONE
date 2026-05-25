@@ -769,14 +769,18 @@ html {
     font-size: 13px;
   }
 }
-.card-title{
+.access-card .card-title{
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 7px;
 }
 
-.card-title i{
+.access-card .card-title i{
   font-size: 15px;
   color: #8d8578;
+}
+
+.access-card:hover .card-title i{
+  color: var(--gold);
 }

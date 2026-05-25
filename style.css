@@ -1138,3 +1138,47 @@ body.dark .orb{
   padding-top: 26px;
   border-top: 1px solid rgba(0,0,0,0.10);
 }
+
+.news-card{
+  position: relative;
+  overflow: hidden;
+  padding: 42px 34px;
+  border-radius: 34px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.74), rgba(238,230,211,0.56));
+  border: 1px solid rgba(255,255,255,0.85);
+  box-shadow:
+    0 28px 70px rgba(0,0,0,0.14),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.news-card::before{
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 26px;
+  border: 1px solid rgba(0,0,0,0.08);
+  pointer-events: none;
+}
+
+.news-card span{
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+.news-card h3{
+  font-size: 26px;
+  margin-top: 26px;
+  margin-bottom: 24px;
+}
+
+.news-card p{
+  font-size: 22px;
+  line-height: 2.1;
+  margin-bottom: 0;
+}
+
+.news-card:hover{
+  background: linear-gradient(145deg, rgba(255,255,255,0.86), rgba(231,221,198,0.72));
+  color: var(--dark);
+}

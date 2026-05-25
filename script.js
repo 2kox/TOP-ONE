@@ -30,13 +30,7 @@ navItems.forEach(item => {
     navLinks.classList.remove("active");
   });
 });
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
 
-  setTimeout(() => {
-    loader.classList.add("hide");
-  }, 1500);
-});
 const cards = document.querySelectorAll(
   ".card, .news-card, .rule-card, .owner-card, .access-card"
 );

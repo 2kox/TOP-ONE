@@ -1368,3 +1368,52 @@ body.dark .footer p {
 body.dark .simple-loader-logo {
   color: #f4ead6;
 }
+
+
+
+
+.loader-text{
+  font-family: 'Cinzel', serif;
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: #111;
+}
+
+.loader-sub{
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  letter-spacing: 8px;
+  color: #8b8578;
+  margin-top: -10px;
+}
+
+.loader-line{
+  width: 220px;
+  height: 2px;
+  background: rgba(0,0,0,0.12);
+  margin-top: 26px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-line::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background: #111;
+  animation: loadingMove 1.4s ease infinite;
+}
+
+@keyframes loadingMove{
+  0%{
+    transform: translateX(-100%);
+  }
+
+  100%{
+    transform: translateX(250%);
+  }
+}

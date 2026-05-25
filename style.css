@@ -804,3 +804,24 @@ html {
 .footer-links a:hover i{
   color: var(--gold);
 }
+.welcome-cards{
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-card{
+  max-width: 680px;
+  padding: 30px 24px;
+  text-align: center;
+}
+
+.welcome-card p{
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto 16px;
+  color: var(--gray);
+}
+
+.welcome-card p:last-child{
+  margin-bottom: 0;
+}

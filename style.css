@@ -825,3 +825,8 @@ html {
 .welcome-card p:last-child{
   margin-bottom: 0;
 }
+
+direction: rtl;
+text-align: right;
+line-height: 1.9;
+font-family: 'Cairo', sans-serif;

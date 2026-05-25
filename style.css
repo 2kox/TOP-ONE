@@ -1294,3 +1294,11 @@ footer.footer{
 html, body{
   margin-bottom: 0;
 }
+
+.footer{
+  min-height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 25px !important;
+}

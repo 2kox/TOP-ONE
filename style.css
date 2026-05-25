@@ -1295,3 +1295,25 @@ html, body{
   margin-bottom: 0;
 }
 
+.footer {
+  width: min(88%, 900px);
+  margin: 80px auto 40px;
+  padding: 48px 24px;
+  border-radius: 34px;
+  background: rgba(247,244,237,0.08);
+  border: 1px solid rgba(247,244,237,0.18);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  backdrop-filter: blur(16px);
+}
+
+.footer-brand {
+  color: var(--cream);
+}
+
+.footer-links a {
+  color: var(--cream);
+}
+
+.footer p {
+  color: rgba(247,244,237,0.75);
+}
